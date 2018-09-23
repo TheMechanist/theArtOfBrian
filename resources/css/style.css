@@ -1,0 +1,15 @@
+/* GLOBAL STYLING */
+html {
+  font-size: 18px;
+  font-family: 'Helvetica', sans-serif;
+}
+
+
+/* HEADER STYLING */
+.colorStripe {
+  position:fixed;
+  z-index: 10;
+  width: 100%;
+  height: .5rem;
+  background-color: darkgoldenrod;
+}
