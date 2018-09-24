@@ -4,12 +4,65 @@ html {
   font-family: 'Helvetica', sans-serif;
 }
 
+.placeHolder {
+  background-color: gray;
+}
+
+.placeHolderText {
+  color: darkgray;
+}
+
 
 /* HEADER STYLING */
-.colorStripe {
-  position:fixed;
-  z-index: 10;
-  width: 100%;
-  height: .5rem;
-  background-color: darkgoldenrod;
+.banner {
+  display: grid;
+  grid-template-columns: 2fr 8fr 1fr 1fr 1fr;
+  grid-template-rows: 100%;
+  justify-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-bottom: 3px solid #1e2a35;
+  border-top: .5rem solid darkgoldenrod;
+}
+
+.siteLogo {
+  grid-column-start: 1;
+}
+
+.twitter {
+  grid-column-start: 3;
+}
+
+.linkedIn {
+  grid-column-start: 4;
+}
+
+.gitHub {
+  grid-column-start: 5;
+}
+
+.twitter, .linkedIn, .gitHub {
+  opacity: .55;
+  -webkit-transition: opacity 1s;
+  -webkit-transition: opacity 1s;
+  transition: opacity 1s;
+}
+
+.twitter:hover, .linkedIn:hover, .gitHub:hover {
+  opacity: 1;
+}
+
+
+
+/* NAVIGATION STYLING */
+nav {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 100%;
+  justify-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-top: 1.5rem;
 }
