@@ -12,6 +12,26 @@ html {
   color: darkgray;
 }
 
+body {
+  display: grid;
+  justify-items: center;
+  border-top: .25rem solid darkgoldenrod;
+}
+
+.navLink {opacity: .33;
+  -webkit-transition: opacity .5s;
+  -webkit-transition: opacity .5s;
+  transition: opacity .5s;
+  border-bottom: 3px solid white;
+  border-top: .25rem solid white;
+}
+
+.navLink:hover {
+  opacity: 1;
+  border-bottom: 3px solid #1e2a35;
+  border-top: 3px solid royalblue;
+}
+
 
 /* HEADER STYLING */
 .banner {
@@ -22,8 +42,9 @@ html {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  width: 980px;
   border-bottom: 3px solid #1e2a35;
-  border-top: .5rem solid darkgoldenrod;
+  margin-top: 4rem;
 }
 
 .siteLogo {
@@ -54,15 +75,43 @@ html {
 }
 
 
-
 /* NAVIGATION STYLING */
 nav {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: 3fr 1fr 1fr 1fr 3fr;
   grid-template-rows: 100%;
   justify-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  margin-top: 1.5rem;
+  padding-top: 1.5rem;
+  border-top: 4px solid royalblue;
+  font-family: 'Oswald', sans-serif;
+}
+
+.myWork {
+  grid-column-start: 2;
+} /* No CSS for the other elements, they fell into place on their own. ¯\_(ツ)_/¯ */
+
+
+
+/* FOOTER STYLING */
+#footer {
+  display: grid;
+  background-color: lightgray;
+  color: gray;
+  padding: 2rem;
+  width: 100%;
+  justify-items: center;
+  font-size: .75rem;
+  border-top: .25rem solid darkgoldenrod;
+}
+
+#footer p {
+  width: 980px;
+}
+
+#footer p span {
+  font-weight: bold;
+  color: darkslategray;
 }
