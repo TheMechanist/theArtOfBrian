@@ -18,12 +18,15 @@ body {
   border-top: .25rem solid darkgoldenrod;
 }
 
-.navLink {opacity: .33;
+.navLink {
+  opacity: .33;
   -webkit-transition: opacity .5s;
   -webkit-transition: opacity .5s;
   transition: opacity .5s;
   border-bottom: 3px solid white;
   border-top: .25rem solid white;
+  text-decoration: none;
+  color: black;
 }
 
 .navLink:hover {
@@ -95,6 +98,48 @@ nav {
 
 
 
+/* MAIN SECTION STYLING */
+/*
+#myWorkGallery {
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-columns: 2fr 1fr;
+  grid-auto-columns: 2fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+*/
+
+#contactSection {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  justify-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-top: 1px solid royalblue;
+  width: 980px;
+  font-family: 'Oswald', sans-serif;
+  background-color: #efefef;
+}
+
+.primaryText {
+  margin-top: 1rem;
+  font-weight: bold;
+  font-size: 3rem;
+  color: #1e2a35;
+}
+
+.secondaryText {
+  font-size: 1.5rem;
+  margin: .75rem 0 3rem 0;
+}
+
+
 /* FOOTER STYLING */
 #footer {
   display: grid;
@@ -107,8 +152,9 @@ nav {
   border-top: .25rem solid darkgoldenrod;
 }
 
-#footer p {
+#footer p, #footer div {
   width: 980px;
+  margin: .5rem 0;
 }
 
 #footer p span {
