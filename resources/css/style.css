@@ -99,17 +99,28 @@ nav {
 
 
 /* MAIN SECTION STYLING */
-/*
-#myWorkGallery {
-  display: grid;
-  grid-auto-flow: column;
-  grid-template-columns: 2fr 1fr;
-  grid-auto-columns: 2fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
+main {
+  width: 980px;
 }
-*/
 
-#contactSection {
+#gallery {
+  display: grid;
+  margin: 2rem 0;
+  grid-template-columns: 2fr 1fr;
+  grid-gap: 3rem;
+}
+
+.siteThumbnail {
+  height: 400px;
+  background-color: gray;
+}
+
+.thumbnailDescription {
+  height: 400px;
+}
+
+
+#contact {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -122,7 +133,6 @@ nav {
   -ms-flex-align: center;
   align-items: center;
   border-top: 1px solid royalblue;
-  width: 980px;
   font-family: 'Oswald', sans-serif;
   background-color: #efefef;
 }
@@ -130,13 +140,27 @@ nav {
 .primaryText {
   margin-top: 1rem;
   font-weight: bold;
-  font-size: 3rem;
+  font-size: 2.75rem;
   color: #1e2a35;
 }
 
 .secondaryText {
   font-size: 1.5rem;
   margin: .75rem 0 3rem 0;
+}
+
+#about {
+  display: grid;
+  margin: 2rem 0;
+  grid-template-columns: 2fr 3fr;
+}
+
+.brianDescription {
+  
+}
+
+.brianImage {
+  
 }
 
 
