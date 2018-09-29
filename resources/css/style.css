@@ -8,10 +8,6 @@ html {
   background-color: gray;
 }
 
-.placeHolderText {
-  color: darkgray;
-}
-
 body {
   display: grid;
   justify-items: center;
@@ -111,12 +107,44 @@ main {
 }
 
 .siteThumbnail {
-  height: 400px;
-  background-color: gray;
+  position: relative;
+}
+
+.siteImage {
+  width: 100%;
+}
+
+.visitSiteOverlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+  background-color: #1e2a35;
+}
+
+.overlayText {
+  color: white;
+  font-size: 2rem;
+  font-family: 'Oswald', sans-serif;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.siteThumbnail:hover .visitSiteOverlay {
+  opacity: .75;
 }
 
 .thumbnailDescription {
   height: 400px;
+  color: darkgray;
 }
 
 
