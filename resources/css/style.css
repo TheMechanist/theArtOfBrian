@@ -29,6 +29,7 @@ body {
   opacity: 1;
   border-bottom: 3px solid #1e2a35;
   border-top: 3px solid royalblue;
+  color: darkgoldenrod;
 }
 
 
@@ -127,7 +128,7 @@ main {
 }
 
 .overlayText {
-  color: white;
+  color: darkgoldenrod;
   font-size: 2rem;
   font-family: 'Oswald', sans-serif;
   position: absolute;
