@@ -17,7 +17,6 @@ body {
 .navLink {
   opacity: .33;
   -webkit-transition: opacity .5s;
-  -webkit-transition: opacity .5s;
   transition: opacity .5s;
   border-bottom: 3px solid white;
   border-top: .25rem solid white;
@@ -65,7 +64,6 @@ body {
 
 .twitter, .linkedIn, .gitHub {
   opacity: .55;
-  -webkit-transition: opacity 1s;
   -webkit-transition: opacity 1s;
   transition: opacity 1s;
 }
@@ -144,7 +142,6 @@ main {
 }
 
 .thumbnailDescription {
-  height: 400px;
   color: #777777;
 }
 
@@ -185,11 +182,12 @@ main {
 }
 
 .brianDescription {
-  
+  color: #777777;
+  margin: 0 1rem 1rem 0;
 }
 
 .brianImage {
-  
+  height: 400px;
 }
 
 
