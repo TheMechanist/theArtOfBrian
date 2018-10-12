@@ -178,7 +178,8 @@ main {
 #about {
   display: grid;
   margin: 2rem 0;
-  grid-template-columns: 2fr 3fr;
+  grid-template-columns: 2fr 1fr;
+  grid-gap: 5rem;
 }
 
 .brianDescription {
@@ -187,7 +188,7 @@ main {
 }
 
 .brianImage {
-  height: 400px;
+  border-radius: 50%;
 }
 
 
