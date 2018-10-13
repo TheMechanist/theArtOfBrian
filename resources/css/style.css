@@ -12,14 +12,15 @@ body {
   display: grid;
   justify-items: center;
   border-top: .25rem solid darkgoldenrod;
+  background-color: gainsboro;
 }
 
 .navLink {
   opacity: .33;
   -webkit-transition: opacity .5s;
   transition: opacity .5s;
-  border-bottom: 3px solid white;
-  border-top: .25rem solid white;
+  border-bottom: 3px solid gainsboro;
+  border-top: .25rem solid gainsboro;
   text-decoration: none;
   color: black;
 }
@@ -167,6 +168,13 @@ main {
   color: #777777;
 }
 
+.thumbnailDescription span a:link {
+  color: darkgreen;
+}
+
+.thumbnailDescription span a:visited {
+  color: darkolivegreen;
+}
 
 #contact {
   display: -webkit-box;
@@ -176,13 +184,13 @@ main {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  justify-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  text-align: center;
   border-top: 1px solid royalblue;
   font-family: 'Oswald', sans-serif;
-  background-color: #efefef;
+  background-color: white;
 }
 
 .primaryText {
@@ -217,8 +225,8 @@ main {
 /* FOOTER STYLING */
 #footer {
   display: grid;
-  background-color: lightgray;
-  color: gray;
+  background-color: darkgray;
+  color: #1e2a35;
   padding: 2rem;
   width: 100%;
   justify-items: center;
@@ -236,12 +244,20 @@ main {
   color: darkslategray;
 }
 
+#footer div a:link {
+  color: darkgreen;
+}
+
+#footer div a:visited {
+  color: darkolivegreen;
+}
+
 
 /* MEDIA QUERY STYLING */
-@media only screen and (min-width: 1070px) {
+@media only screen and (min-width: 950px) {
   
   /* Hides mobile icons in tablet/desktop mode */
-  .mobileNav, .mobileBanner {
+  .mobileNav, .mobileBanner, #socialMedia {
     display: none;
   }  
 }
@@ -250,8 +266,12 @@ main {
   
   /* TABLET STYLING */
   
-  .mobileNav, .mobileBanner {
+  .mobileNav, .mobileBanner, #socialMedia {
     display: none;
+  }
+  
+  .twitter, .linkedIn, .gitHub {
+    margin: 0 .5rem;
   }
   
   #gallery {
@@ -296,8 +316,28 @@ main {
     display: flex;
   }
   
-  .mobileNav a {
+  #socialMedia {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    margin-bottom: 1rem;
+    width: 100%;
+  }
+  
+  #navLinks a {
     margin: 1rem;
+  }
+  
+  .siteThumbnail {
+    margin-bottom: 2rem;
+    width: 80%;
+  }
+  
+  .description {
+    margin-bottom: 8rem;
+    width: 80%;
   }
   
   #about {
@@ -311,6 +351,10 @@ main {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
+  }
+  
+  #contact h1, #contact p {
+    width: 80%
   }
   
   .brianImage {
