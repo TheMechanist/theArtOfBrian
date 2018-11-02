@@ -4,8 +4,29 @@ html {
   font-family: 'Helvetica', sans-serif;
 }
 
-.placeHolder {
-  background-color: gray;
+.primaryText {
+  margin-top: 1rem;
+  font-weight: bold;
+  font-size: 2.75rem;
+  color: #1e2a35;
+}
+
+.secondaryText {
+  font-size: 1.5rem;
+  margin: .75rem 0 3rem 0;
+}
+
+.primaryTextAlt {
+  margin-top: 1rem;
+  font-weight: bold;
+  font-size: 2.75rem;
+  color: white;
+}
+
+.secondaryTextAlt{
+  font-size: 1.5rem;
+  margin: .75rem 0 3rem 0;
+  color: gainsboro;
 }
 
 body {
@@ -109,6 +130,31 @@ main {
   max-width: 980px;
 }
 
+#landingPage {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  height: 30rem;
+  width: 100%;
+  margin-top: 2rem;
+  background-image: url(../imgs/law-bg.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  text-align: center;
+}
+
+main h2 {
+  text-align: center;
+  padding-top: 1rem; 
+}
+
 #gallery {
   display: grid;
   margin: 2rem 0;
@@ -122,7 +168,7 @@ main {
   -webkit-box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
   box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
   padding: .25rem;
-  background-color: #c1cde3;
+  background-color: white;
   
 }
 
@@ -200,18 +246,6 @@ main {
   background-color: white;
   -webkit-box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
   box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
-}
-
-.primaryText {
-  margin-top: 1rem;
-  font-weight: bold;
-  font-size: 2.75rem;
-  color: #1e2a35;
-}
-
-.secondaryText {
-  font-size: 1.5rem;
-  margin: .75rem 0 3rem 0;
 }
 
 #about {
