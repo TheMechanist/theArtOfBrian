@@ -151,8 +151,8 @@ main {
   justify-content: center;
   height: 30rem;
   width: 100%;
-  margin-top: 2rem;
-  background-image: url(../imgs/law-bg.jpg);
+  margin: 2rem 0;
+  background-image: url(../imgs/webDevBG.jpg);
   background-size: cover;
   background-attachment: fixed;
   text-align: center;
