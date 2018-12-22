@@ -159,6 +159,7 @@ main {
   background-image: url(../imgs/webDevBG.jpg);
   background-size: cover;
   background-attachment: fixed;
+  background-position: center;
   text-align: center;
 }
 
@@ -311,12 +312,23 @@ main {
   display: grid;
   background-color: darkgray;
   color: #1e2a35;
-  padding: 2rem;
   width: 100%;
   justify-items: center;
   font-size: .75rem;
   border-top: .25rem solid darkgoldenrod;
 }
+
+/* Padding on #footer p and #footer div is to give the footer some height. */
+#footer p {
+  padding-top: 2rem;
+}
+
+#footer div {
+  padding-bottom: 2rem;
+  text-align: center;
+}
+/* End strange styling */
+
 
 #footer p, #footer div {
   max-width: 980px;
@@ -422,6 +434,10 @@ main {
     margin: 1rem;
   }
   
+  .secondaryTextAlt {
+    margin: .75rem .5rem 3rem .5rem;
+  }
+  
   .siteThumbnail {
     margin-bottom: 2rem;
     width: 80%;
@@ -430,6 +446,10 @@ main {
   .description {
     margin-bottom: 8rem;
     width: 80%;
+  }
+  
+  #email {
+    font-size: 1.75rem;
   }
   
   #iconLayout {
